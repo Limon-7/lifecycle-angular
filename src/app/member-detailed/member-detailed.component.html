@@ -1,0 +1,45 @@
+<div class="container">
+  <span class="setup">Given Number</span>
+  <h1 class="punchline">{{ data }}</h1>
+  <button type="button" class="btn btn-success" (click)="fnAddNumber()">
+    Add NUmber
+  </button>
+  <button type="button" class="btn btn-danger" (click)="deleteNumber()">
+    Clear Number
+  </button>
+</div>
+
+<div class="container-12">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <p>Angular life-cycle</p>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group d-flex">
+            <button class="btn btn-primary w-100">Like</button>
+            <button class="btn btn-success w-100" (click)="selectTab(3)">
+              Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="tab-panel">
+        <tabset class="member-tabset" #taMember>
+          <tab heading="Home">Description</tab>
+          <tab
+            heading="Interest"
+            [routerLink]="['/member']"
+            [queryParams]="{ tab: 1 }"
+            >Interst</tab
+          >
+          <tab heading="Photo">Photo</tab>
+          <tab heading="Message"> </tab>
+        </tabset>
+      </div>
+    </div>
+  </div>
+</div>
