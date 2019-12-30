@@ -2,26 +2,30 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
-## Development server
+## ViewChild():
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Property decorator that configures a view query. The change detector looks for the first element or the directive matching the selector in the view DOM. If the view DOM changes, and a new child matches the selector, the property is updated.
 
-## Code scaffolding
+### Constructor viewchild undefined that is because by the time the constructor is called we haven’t render the children yet.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Note: If we interact with viewchild references in our component we need to do that in the ngAfterViewInit function.
 
-## Build
+We can use it when only child component.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## ViewChildren():
 
-## Running unit tests
+Parameter decorator that configures a view query.
+When we have multiple child components to use ViewChildren along with generic QueryList instead of using viewchild.
+@ViewChildren(ComponentName) viewChildren:QueryList<ComponentName>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Note
 
-## Running end-to-end tests
+We use the ViewChildren decorator which matches all joke’s components and stores them in a QuerList called viewChildren.
+We can convert our querylist joke components into an array by calling toArray().
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## ContentChild():
 
-## Further help
+The concept of a content child is similar to that of a view child but the content children of the given component are the child elements that are projected into the component from the host component.
+In our example application we are projecting one joke in from the host ChildrenHomeComponent.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Note:
