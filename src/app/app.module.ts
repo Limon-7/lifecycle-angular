@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TabsModule, ModalModule } from 'ngx-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MemberDetailedComponent } from './member-detailed/member-detailed.component';
@@ -22,6 +23,7 @@ import { AddButtonComponent } from './content-projection/add-button/add-button.c
 import { ChildrenHomeComponent } from './children/children-home/children-home.component';
 import { JokeComponent } from './children/joke/joke.component';
 import { JokeListComponent } from './children/joke-list/joke-list.component';
+import { HomeHttpComponent } from './http/home-http/home-http.component';
 
 
 @NgModule({
@@ -42,10 +44,12 @@ import { JokeListComponent } from './children/joke-list/joke-list.component';
       AddButtonComponent,
       ChildrenHomeComponent,
       JokeComponent,
-      JokeListComponent
+      JokeListComponent,
+      HomeHttpComponent
    ],
    imports: [
       BrowserModule,
+      HttpClientModule,
       FormsModule,
       ReactiveFormsModule,
       TabsModule.forRoot(),
