@@ -7,7 +7,10 @@ import { Joke } from 'src/app/_model/joke';
   styleUrls: ['./children-home.component.css']
 })
 export class ChildrenHomeComponent implements OnInit {
-  joke: Joke[] = [new Joke('A kid threw a lump of cheddar at me', 'I thought ‘That’s not very mature’')];
+  // parent class
+  joke: Joke[] = [
+    new Joke('Content projection-1', 'Description Content projection-1’'),
+    new Joke('Content projection-2', 'Description Content projection-2’')];
   constructor() { }
 
   ngOnInit() {
