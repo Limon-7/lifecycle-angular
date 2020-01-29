@@ -4,7 +4,6 @@ import { TabsModule, ModalModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MemberDetailedComponent } from './member-detailed/member-detailed.component';
-import { HomeComponent } from './home/home.component';
 import { MessageComponent } from './message/message.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,13 +21,15 @@ import { AddButtonComponent } from './content-projection/add-button/add-button.c
 import { ChildrenHomeComponent } from './children/children-home/children-home.component';
 import { JokeComponent } from './children/joke/joke.component';
 import { JokeListComponent } from './children/joke-list/joke-list.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './nav/navbar/navbar.component';
+
 
 
 @NgModule({
    declarations: [
       AppComponent,
       MemberDetailedComponent,
-      HomeComponent,
       MessageComponent,
       HomeTodoComponent,
       HeaderComponent,
@@ -42,7 +43,9 @@ import { JokeListComponent } from './children/joke-list/joke-list.component';
       AddButtonComponent,
       ChildrenHomeComponent,
       JokeComponent,
-      JokeListComponent
+      JokeListComponent,
+      HomeComponent,
+      NavbarComponent
    ],
    imports: [
       BrowserModule,
