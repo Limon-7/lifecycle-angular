@@ -1,0 +1,80 @@
+<app-basic-home></app-basic-home>
+<hr />
+<div class="container row">
+  <div class="col-6">
+    <h3>NgIf</h3>
+    <div>
+      <ul *ngFor="let person of people">
+        <li *ngIf="person.age > 25">
+          {{ person.name }}-{{ person.age }} from {{ person.country }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-6">
+    <h3>NgSwitch</h3>
+    <ul *ngFor="let person of people" [ngSwitch]="person.country">
+      <li *ngSwitchCase="'Bd'" class="text-success">
+        {{ person.name + " from " + person.country }}
+      </li>
+      <li *ngSwitchCase="'Uk'" class="text-primary">
+        {{ person.name + " from " + person.country }}
+      </li>
+      <li *ngSwitchCase="'USA'" class="text-danger">
+        {{ person.name + " from " + person.country }}
+      </li>
+      <li *ngSwitchDefault class="text-warning">
+        {{ person.name + " from " + person.country }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h2>NgIF</h2>
+      <!-- ngIf -->
+      <div *ngIf="course.length > 0; then hasCourses; else noCourses"></div>
+      <ng-template #hasCourses>
+        <p>You have {{ course.length }} courses</p>
+      </ng-template>
+      <ng-template #noCourses>
+        <p>No courses avaiable</p>
+      </ng-template>
+    </div>
+    <div class="col-6">
+      <h2>Switcase</h2>
+      <div>
+        <ul class="nav nav-pills">
+          <li>
+            <a
+              class="nav-link"
+              [class.active]="viewMode == 'map'"
+              (click)="viewMode = 'map'"
+              >Map View</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              [class.active]="viewMode == 'list'"
+              (click)="viewMode = 'list'"
+              >List View</a
+            >
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div [ngSwitch]="viewMode">
+        <div *ngSwitchCase="'map'" class="active">
+          Map View Mode
+        </div>
+        <div *ngSwitchCase="'list'" class="active">
+          List View Mode
+        </div>
+        <div *ngSwitchDefault>No view found</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,9 +5,7 @@ import { TabsModule, ModalModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { MemberDetailedComponent } from './member-detailed/member-detailed.component';
 import { MessageComponent } from './message/message.component';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RoutingModule } from './routing/routing.module';
 import { HomeTodoComponent } from './todo/home-todo/home-todo.component';
 import { HeaderComponent } from './todo/header/header.component';
 import { FooterComponent } from './todo/footer/footer.component';
@@ -23,6 +21,8 @@ import { JokeComponent } from './children/joke/joke.component';
 import { JokeListComponent } from './children/joke-list/joke-list.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './nav/navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BasicModule } from './basic/basic.module';
 
 
 
@@ -53,7 +53,8 @@ import { NavbarComponent } from './nav/navbar/navbar.component';
       ReactiveFormsModule,
       TabsModule.forRoot(),
       ModalModule.forRoot(),
-      RoutingModule
+      AppRoutingModule,
+      BasicModule
    ],
    providers: [],
    bootstrap: [

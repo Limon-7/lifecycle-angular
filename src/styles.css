@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: blueviolet;
+  color: aqua;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-pills .nav-link {
+
+  cursor: pointer;
+}
+
+.active {}

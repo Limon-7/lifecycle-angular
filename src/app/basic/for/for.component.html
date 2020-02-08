@@ -1,0 +1,46 @@
+<app-basic-home></app-basic-home>
+<hr />
+<div class="container row">
+  <div class="col-4">
+    <h3>NgFor Grouped</h3>
+    <ul *ngFor="let group of peopleByCountry">
+      <li>{{ group.country }}</li>
+      <ul>
+        <li *ngFor="let person of group.people">
+          {{ person.name }}
+        </li>
+      </ul>
+    </ul>
+  </div>
+  <div class="col-4">
+    <h3>trackBy use to memory lick</h3>
+    <button (click)="loadDepartments()" class="btn btn-success">Show</button>
+    <li *ngFor="let d of department; trackBy: trackDepartment">
+      {{ d.name }}
+    </li>
+  </div>
+</div>
+<hr />
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <!-- get index use index after variables,ex- ...courses;index as i index casting as i  -->
+      <li *ngFor="let course of courses; index as i; even as isEven">
+        {{ i + "    " + course.Course }} <span *ngIf="isEven">(Even)</span>
+      </li>
+    </div>
+    <div class="col-6">
+      <h3>
+        change ditection
+        <button class="btn btn-primary" (click)="addCourse()">Add</button>
+      </h3>
+
+      <li *ngFor="let c of courses; index as i; even as isEven">
+        {{ i + "    " + c.Course }} <span *ngIf="isEven">(Even)</span>
+        <button class="btn btn-primary" (click)="removeCourse(c)">
+          X
+        </button>
+      </li>
+    </div>
+  </div>
+</div>

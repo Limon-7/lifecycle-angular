@@ -1,0 +1,56 @@
+<app-basic-home></app-basic-home>
+<div class="container row">
+  <div class="col-6">
+    <p class="text-success">
+      <strong>NgStyle:</strong> NgStyle gives you fine grained control on
+      individual properties. But if you want to make changes to multiple
+      properties at once, creating a class which bundles those properties and
+      adding the class with NgClass makes more sense.
+    </p>
+  </div>
+  <div class="col-6">
+    <ul *ngFor="let person of people">
+      <li
+        [style.color]="getColor(person.country)"
+        [ngStyle]="{ 'font-weight': 'bold', 'font-size.px': 20 }"
+      >
+        {{ person.name + " from " + person.country }}
+      </li>
+    </ul>
+  </div>
+</div>
+<hr />
+<div class="container row">
+  <div class="col-6">
+    <h2>Ng Class</h2>
+    <p [style.color]="'green'">
+      The NgClass directive allows you to set the CSS class dynamically for a
+      DOM element.
+    </p>
+    <ul *ngFor="let person of people">
+      <!-- <li [ngClass]="{ 'text-danger': person.country === 'Uk' }"> -->
+      <!-- [class.text-success]="person.country === 'Uk'" -->
+      <li [class.text-success]="person.country === 'Uk'">
+        {{ person.name + " from " + person.country }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-6">
+    <h2>Class with function</h2>
+    <p [style.color]="'green'">
+      We can also set a class on an element by binding to the input property
+      binding called class
+    </p>
+    <ul *ngFor="let person of people">
+      <!-- <li [ngClass]="{ 'text-danger': person.country === 'Uk' }"> -->
+      <!-- [class.text-success]="person.country === 'Uk'" -->
+      <li
+        [class.text-success]="person.country === 'Uk'"
+        [class.text-primary]="person.country === 'Bd'"
+        [class.alert-warning]="person.country === 'USA'"
+      >
+        {{ person.name + " from " + person.country }}
+      </li>
+    </ul>
+  </div>
+</div>

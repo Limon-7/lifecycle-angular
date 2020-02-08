@@ -1,15 +1,38 @@
 <div class="container m-2 p-2">
-  <button class="btn btn-primary m-2 " [routerLink]="['/message']">
+  <button
+    class="btn button"
+    [routerLink]="['/message']"
+    [routerLinkActive]="['active']"
+  >
     Messsage
   </button>
-  <button class="btn btn-primary m-2" [routerLink]="['/todo']">
+  <button
+    class="btn button"
+    [routerLink]="['/todo']"
+    [routerLinkActive]="['active']"
+  >
     Todo-life-cycle
   </button>
 
-  <button class="btn btn-primary m-2" [routerLink]="['/view']">
+  <button
+    class="btn button"
+    [routerLink]="['/view']"
+    [routerLinkActive]="['active']"
+  >
     View Children
   </button>
-  <button class="btn btn-primary m-2" [routerLink]="['/projection']">
+  <button
+    class="btn button"
+    [routerLink]="['/projection']"
+    [routerLinkActive]="['active']"
+  >
     projection
+  </button>
+  <button
+    class="btn button"
+    [routerLink]="['/basic']"
+    [routerLinkActive]="['active']"
+  >
+    Basic
   </button>
 </div>

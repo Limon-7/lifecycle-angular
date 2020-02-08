@@ -1,27 +1,296 @@
-# Basicapp
+# VSCode Shortcuts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+> List of helpful shortcuts for faster coding
 
-## Development server
+If you have any other helpful shortcuts, feel free to add in the comments of this gist :)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Official List of all commands
 
-## Code scaffolding
+- [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+- [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Open/View
 
-## Build
+Open Command Pallete
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+Shift+Cmd+P
+Shift+Ctrl+P
+```
 
-## Running unit tests
+Access Settings
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+Cmd+,
+Ctrl+,
+```
 
-## Running end-to-end tests
+Toggle Terminal
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```bash
+Ctrl+`
+Ctrl+`
+```
 
-## Further help
+Create New Terminal
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+Shift+Ctrl+`
+Shift+Ctrl+`
+```
+
+Toggle Sidebar
+
+```bash
+Cmd+B
+Ctrl+B
+```
+
+Open New Window/Instance
+
+```bash
+Shift+Cmd+N
+Shift+Ctrl+N
+```
+
+Close Window
+
+```bash
+Cmd+W
+Ctrl+W
+```
+
+## Working With Files
+
+Sidebar Focus
+
+```bash
+Shift+Cmd+E
+Shift+Ctrl+E
+```
+
+Open File/Folder From Sidebar
+
+```
+Cmd+Down
+Ctrl+Down
+```
+
+Change File Tabs
+
+```bash
+Ctrl+Tab
+Ctrl+PageUP
+```
+
+Quick File Open
+
+```bash
+Cmd+P
+Ctrl+P
+```
+
+Open File From Explorer
+
+```bash
+Cmd+O
+Ctrl+O
+```
+
+New File
+
+```bash
+Cmd+N
+Ctrl+N
+```
+
+Save
+
+```bash
+Cmd+S
+Ctrl+S
+```
+
+Save As
+
+```bash
+Shift+Cmd+S
+Shift+Ctrl+S
+```
+
+Close File
+
+```bash
+Cmd+W
+Ctrl+W
+```
+
+Delete File
+
+```
+Cmd+Delete
+Ctrl+Delete
+```
+
+Reopen Files
+
+```
+Shift+Cmd+T
+Shift+Ctrl+T
+```
+
+Zoom
+
+```bash
+Cmd++ # Zoom in
+Cmd+- # Zoom out
+
+Ctrl++ # Zoom in
+Ctrl+- # Zoom out
+```
+
+Spilt Editor
+
+```bash
+Cmd+\
+Ctrl+\
+```
+
+## Code Editing
+
+Go To Start & End Of Line
+
+```bash
+Cmd+Right
+Cmd+Left
+
+Ctrl+Right
+Ctrl+Left
+
+home
+end
+```
+
+Move By Word
+
+```bash
+Option+Right
+Option+Left
+
+Alt+Right
+Alt+Left
+```
+
+Go To Start & End Of File
+
+```bash
+Cmd+Up
+Cmd+Down
+
+Ctrl+Home
+Ctrl+End
+```
+
+Cut, Copy & Past Line
+
+```bash
+Cmd+X #Cut
+Cmd+C #Copy
+Cmd+V #Paste
+
+Ctrl+X # Cut
+Ctrl+C # Copy
+Ctrl+V # Paste
+```
+
+Move Line Up & Down
+
+```bash
+Option+Up
+Option+Down
+
+Alt+Up
+Alt+Down
+```
+
+Copy Line Up & Down
+
+```bash
+Shift+Option+Up
+Shift+Option+Down
+
+Shift+Alt+Up
+Shift+Alt+Down
+```
+
+Remove Line
+
+```bash
+ShiftCmd+K
+Shift+Ctrl+K
+```
+
+Insert Line
+
+```bash
+Cmd+Enter # Insert below
+Shift+Cmd+Enter # Insert above
+
+Ctrl+Enter # Insert below
+Shift+Ctrl+Enter # Insert above
+```
+
+Jump To Matching Bracket
+
+```bash
+Shift+Cmd+\
+Shift+Ctrl+\
+```
+
+Add Line Comment
+
+```bash
+Cmd+/
+Ctrl+/
+```
+
+Add Block Comment
+
+```bash
+Shift+Option+A
+Shift+Alt+A
+```
+
+Highlight Code
+
+```bash
+Shift+Any Direction
+```
+
+Select Next Match
+
+```bash
+Cmd+D
+Ctrl+D
+```
+
+De-select Match
+
+```bash
+Cmd+U
+Ctrl+U
+```
+
+Add Cursor
+
+```bash
+Option+Click
+Alt+Click
+```
+
+Go to Entity (Functions, vars, etc)
+
+```bash
+Cmd+Shift+O
+Ctrl+Shift+O
+```
